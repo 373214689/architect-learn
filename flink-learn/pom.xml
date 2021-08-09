@@ -12,5 +12,26 @@
     <groupId>com.liuyang.learn</groupId>
     <artifactId>flink-learn</artifactId>
 
+    <dependencies>
+        <!--flink java-->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-java</artifactId>
+            <version>1.12.0</version>
+            <!--<scope>provided</scope>--><!--本地运行时注释，打包时打开-->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-java_2.11</artifactId>
+            <version>1.12.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.flume/flume-ng-core -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-walkthrough-datastream-java</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
