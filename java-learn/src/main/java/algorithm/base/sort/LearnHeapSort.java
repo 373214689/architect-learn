@@ -7,8 +7,25 @@ public class LearnHeapSort {
     public static void main(String[] args) throws IOException {
         int[] arr = new int[] {12, 1, 99, 78, 54, 32, 91, 1001, 97};
 
-        //shellSort(arr);
-        System.out.println("shellSort Result: " + java.util.Arrays.toString(arr));
+        heapSort(arr);
+        System.out.println("heapSort Result: " + java.util.Arrays.toString(arr));
+    }
+
+    private static void heapSort(int[] arr) {
+        int length = arr.length;
+        //从最后一个非叶子节点开始向上构造最大堆
+        for (int i = (length/2 - 1); i >= 0; i--) { //感谢 @让我发会呆 网友的提醒，此处应该为 i = (len/2 - 1)
+            maxHeapify(arr, i, length - 1);
+        }
+        //调整堆结构+交换堆顶元素与末尾元素
+        for (int i = arr.length - 1; i > 0; i--) {
+            //将堆顶元素与末尾元素进行交换
+            int temp = arr[i];
+            arr[i] = arr[0];
+            arr[0] = temp;
+            //重新对堆进行调整
+            maxHeapify(arr, 0, i);
+        }
     }
 
     private static void maxHeapify(int[] arr, int index, int size) {
