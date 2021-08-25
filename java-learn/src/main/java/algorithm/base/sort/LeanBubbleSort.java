@@ -11,6 +11,7 @@ public class LeanBubbleSort {
         System.out.println("bubbleSort Result: " + java.util.Arrays.toString(arr));
     }
 
+
     public static void bubbleSort(int arr[]) {
         int length = arr.length;
         //冒泡

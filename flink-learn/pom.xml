@@ -13,6 +13,19 @@
     <artifactId>flink-learn</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-core</artifactId>
+            <version>1.12.0</version>
+            <!--<scope>provided</scope>--><!--本地运行时注释，打包时打开-->
+        </dependency>
         <!--flink java-->
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -24,7 +37,7 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java_2.11</artifactId>
             <version>1.12.0</version>
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.flume/flume-ng-core -->
         <dependency>
@@ -32,6 +45,13 @@
             <artifactId>flink-walkthrough-datastream-java</artifactId>
             <version>1.12.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-clients_2.11</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>

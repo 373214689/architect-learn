@@ -16,6 +16,8 @@
         <module>hive-learn</module>
         <module>kafka-learn</module>
         <module>scala-learn</module>
+        <module>spring-mvc</module>
+        <module>spring-boot</module>
     </modules>
 
 

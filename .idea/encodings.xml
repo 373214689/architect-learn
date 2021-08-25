@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hadoop-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hive-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scala-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spark-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-service-01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mvc" charset="UTF-8" />
   </component>
 </project>
