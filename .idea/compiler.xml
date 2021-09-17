@@ -11,6 +11,7 @@
         <module name="hive-learn" />
         <module name="java-learn" />
         <module name="kafka-learn" />
+        <module name="life-restart" />
         <module name="scala-learn" />
         <module name="spark-learn" />
         <module name="spring-boot" />
@@ -18,18 +19,5 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="flink-learn" options="" />
-      <module name="hadoop-learn" options="" />
-      <module name="hive-learn" options="" />
-      <module name="java-learn" options="" />
-      <module name="kafka-learn" options="" />
-      <module name="scala-learn" options="" />
-      <module name="spark-learn" options="" />
-      <module name="spring-boot" options="" />
-      <module name="spring-mvc" options="" />
-    </option>
   </component>
 </project>
