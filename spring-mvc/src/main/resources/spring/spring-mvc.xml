@@ -23,6 +23,15 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <!--
+    <entity id="htmlviewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="com.izhbg.typz.common.springmvc.view.HtmlResourceView"/>
+        <property name="order" value="0" />
+        <property name="prefix" value="/cms/"/>
+        <property name="suffix" value=".html" />
+        <property name="contentType" value="text/html;charset=UTF-8"></property>
+    </entity>
+    -->
 
     <!--
         自动注册最合适的处理器映射器，处理器适配器(调用handler方法)

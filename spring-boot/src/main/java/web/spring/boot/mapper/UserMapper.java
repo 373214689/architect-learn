@@ -1,8 +1,7 @@
-package com.liuyang.web.mapper;
+package web.spring.boot.mapper;
 
-import com.liuyang.web.entity.User;
+import web.spring.boot.entity.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

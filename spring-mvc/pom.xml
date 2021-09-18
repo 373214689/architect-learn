@@ -18,6 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <spring.mvc.version>5.1.12.RELEASE</spring.mvc.version>
         <tomcat.version>7.0.47</tomcat.version>
         <mybatis.version>3.5.2</mybatis.version>
         <mysql.driver.version>5.1.29</mysql.driver.version>
@@ -28,10 +29,17 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.1.12.RELEASE</version>
+            <version>${spring.mvc.version}</version>
         </dependency>
 
-
+        <!--
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>java.servlet-api</artifactId>
+            <version>3.0</version>
+            <scope>provided</scope>
+        </dependency>
+        -->
 
         <!-- Mybatis -->
         <dependency>
@@ -47,6 +55,8 @@
             <scope>runtime</scope>
             <version>${mysql.driver.version}</version>
         </dependency>
+
+
     </dependencies>
 
     <build>

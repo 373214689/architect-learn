@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink-learn" />
-        <module name="hadoop-learn" />
-        <module name="hive-learn" />
         <module name="java-learn" />
-        <module name="kafka-learn" />
-        <module name="life-restart" />
-        <module name="scala-learn" />
         <module name="spark-learn" />
-        <module name="spring-boot" />
         <module name="spring-mvc" />
+        <module name="flink-learn" />
+        <module name="hive-learn" />
+        <module name="kafka-learn" />
+        <module name="spring-boot" />
+        <module name="hadoop-learn" />
+        <module name="scala-learn" />
+        <module name="life-restart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
