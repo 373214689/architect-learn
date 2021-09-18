@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuyang.web.mapper.UserMapper">
+    <!-- https://mybatis.org/mybatis-3/zh/sqlmap-xml.html -->
+
+    <resultMap id="user" type="com.liuyang.web.entity.User">
+        <!-- https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#Result_Maps -->
+        <id column="user_id" property="userId"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_login_time" property="lastLoginTime"/>
+        <result column="last_login_ip" property="lastLoginIp"/>
+    </resultMap>
+
+    <select id="selectUserById" resultMap="user">
+        select * from dim_cfg_users t where user_id = #{user_id}
+    </select>
+
+    <select id="selectUserByName" resultMap="user">
+        select * from dim_cfg_users t where username = #{username}
+    </select>
+
+    <select id="selectAllUser" resultMap="user">
+        select * from dim_cfg_users t
+    </select>
+
+    <insert id="insertUser">
+        insert into dim_cfg_users (
+            user_id,
+            username,
+            password,
+            create_time,
+            last_login_time,
+            last_login_ip
+        ) values (
+            #{userId},
+            #{username},
+            #{password},
+            #{createTime},
+            #{lastLoginTime},
+            #{lastLoginIp}
+        )
+    </insert>
+
+    <update id="updateUser">
+         update dim_cfg_users set
+             password = #{password},
+             last_login_time = #{lastLoginTime},
+             last_login_ip = #{lastLoginIp}
+         where user_id  = #{userId}
+    </update>
+
+</mapper>
