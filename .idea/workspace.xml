@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="v0.0.1 2021/09/21" />
+    <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="v0.0.1 2021/09/21">
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -554,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632192008280</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v0.0.1 2021/09/21">
+      <created>1632206983293</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632206983294</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
