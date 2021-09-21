@@ -1,8 +1,15 @@
-web\spring\boot\component\MapperUnit.class
+web\spring\boot\util\TokenUtil.class
+web\spring\boot\service\UserService.class
+web\spring\boot\entity\Message.class
 web\spring\boot\service\TestService.class
+web\spring\boot\util\RedisUtil.class
 web\spring\boot\controller\HomeController.class
+web\spring\boot\util\MapperUnit.class
 web\spring\boot\component\MybatisMapperFactory.class
 web\spring\boot\StartSpringBoot.class
+web\spring\boot\util\JsonUtil.class
 web\spring\boot\entity\User.class
+web\spring\boot\controller\UserController.class
 web\spring\boot\component\MybatisMapper.class
+web\spring\boot\component\RedisConfig.class
 web\spring\boot\mapper\UserMapper.class

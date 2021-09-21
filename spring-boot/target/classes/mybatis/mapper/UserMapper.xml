@@ -27,7 +27,7 @@
         select * from dim_cfg_users t
     </select>
 
-    <insert id="insertUser">
+    <insert id="insertUser" parameterType="web.spring.boot.entity.User">
         insert into dim_cfg_users (
             user_id,
             username,

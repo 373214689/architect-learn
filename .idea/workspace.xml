@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="v0.0.1 2021/09/21">
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/component/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/UserContorller.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/JsonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/config/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MapperUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MybatisMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MybatisMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +108,11 @@
         <option name="printErrorStackTraces" value="true" />
         <option name="userSettingsFile" value="D:\usr\local\apache\maven\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="autoDetectCompiler" value="false" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -391,17 +411,18 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1631894977766" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../usr/app/JetBrains/crack/BetterIntelliJ-1.16.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot/src/main/resources/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-boot\src\main\resources\templates" />
       <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-boot\src\main\resources" />
       <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-boot\src\main\java\web\spring\boot" />
       <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\life-restart\src\main\resources\config" />
@@ -566,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632206983294</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v0.0.1 2021/09/21">
+      <created>1632207936994</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632207936994</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">

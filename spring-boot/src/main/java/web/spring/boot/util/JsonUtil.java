@@ -8,9 +8,13 @@ public class JsonUtil {
 
     private static final ObjectMapper mapper = new ObjectMapper();
 
-    public static String writeValueAsString(Object o) throws JsonProcessingException {
+    public static String writeValueAsString(Object o) {
 
-        return mapper.writeValueAsString(o);
+        try {
+            return mapper.writeValueAsString(o);
+        } catch (JsonProcessingException e) {
+            return null;
+        }
     }
 
 }
