@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import web.spring.boot.component.MybatisMapper;
+import web.spring.boot.component.MybatisMapperFactory;
 import web.spring.boot.entity.User;
 import web.spring.boot.mapper.UserMapper;
 
@@ -24,6 +26,9 @@ public class HomeController {
     @Autowired
     UserMapper userMapper;
 
+    @Autowired
+    MybatisMapper userMapper2;
+
     @RequestMapping("")
     public String index(HttpServletRequest request, HttpServletResponse response) {
 
@@ -34,7 +39,7 @@ public class HomeController {
     @ResponseBody
     @RequestMapping("test")
     public List<User> test(HttpServletRequest request, HttpServletResponse response) {
-
-        return userMapper.selectUserById(1);
+        return userMapper2.selectList("selectUserById", 1);
+        //return userMapper.selectUserById(1);
     }
 }

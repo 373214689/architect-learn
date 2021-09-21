@@ -5,8 +5,8 @@
 <mapper namespace="web.spring.boot.mapper.UserMapper">
     <!-- https://mybatis.org/mybatis-3/zh/sqlmap-xml.html -->
 
+    <!-- https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#Result_Maps -->
     <resultMap id="user" type="web.spring.boot.entity.User">
-        <!-- https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#Result_Maps -->
         <id column="user_id" property="userId"/>
         <result column="username" property="username"/>
         <result column="password" property="password"/>

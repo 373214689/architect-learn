@@ -21,7 +21,9 @@
         <spring-boot.version>2.5.0</spring-boot.version>
         <spring-data-releasetrain.version>Moore-SR6</spring-data-releasetrain.version>
         <spring-boot.start.class>web.spring.boot.StartSpringBoot</spring-boot.start.class>
+        <spring-boot.mybatis.version>1.3.2</spring-boot.mybatis.version>
         <mysql.driver.version>8.0.26</mysql.driver.version>
+        <druid.version>1.2.6</druid.version>
         <junit.version>4.12</junit.version>
     </properties>
 
@@ -35,16 +37,6 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
-            <!-- Override Spring Data release train provided by Spring Boot -->
-            <!--
-            <dependency>
-                <groupId>org.springframework.data</groupId>
-                <artifactId>spring-data-releasetrain</artifactId>
-                <version>2020.0.0-SR1</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            -->
             <!-- Override Spring Data release train provided by Spring Boot -->
             <dependency>
                 <groupId>org.springframework.data</groupId>
@@ -75,18 +67,34 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
         <!--开发web项目相关依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
+        <!--Thymeleaf 启动器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!-- 整合 Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.3.2</version>
+            <version>${spring-boot.mybatis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
         </dependency>
 
         <dependency>
@@ -95,11 +103,17 @@
             <version>${mysql.driver.version}</version>
         </dependency>
 
+        <!-- 引入 jwt -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.18.2</version>
+        </dependency>
+
         <!-- junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 

@@ -1,21 +1,18 @@
-package web.spring.boot.component;
+package web.spring.boot.util;
 
 
-import web.spring.boot.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import web.spring.boot.mapper.UserMapper;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 
-@Service
 @Component
 public class MapperUnit {
 
     private static MapperUnit mapperUnit;
 
-    @Resource
+    @Autowired
     private UserMapper userMapper;
 
 

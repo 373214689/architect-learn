@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="v0.0.1" />
+    <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="v0.0.1">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5f763b57-f517-4acc-8d2c-086b03d0bb5a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5f763b57-f517-4acc-8d2c-086b03d0bb5a/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5f763b57-f517-4acc-8d2c-086b03d0bb5a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5f763b57-f517-4acc-8d2c-086b03d0bb5a/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/component/MybatisMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/component/MybatisMapperFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/UserContorller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/TokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5f763b57-f517-4acc-8d2c-086b03d0bb5a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5f763b57-f517-4acc-8d2c-086b03d0bb5a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/life-restart/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/life-restart/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/StartSpringBoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/StartSpringBoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/component/MapperUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/MapperUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/StartSpringBoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/StartSpringBoot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +79,14 @@
       <GitPushTagMode />
     </option>
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -77,6 +118,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../usr/local/apache/maven" />
+        <option name="printErrorStackTraces" value="true" />
         <option name="userSettingsFile" value="D:\usr\local\apache\maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -112,6 +154,9 @@
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dfile.encoding=UTF-8" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -367,19 +412,21 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="15" />
     <property name="RequestMappingsPanelWidth1" value="15" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1631894977766" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../usr/app/JetBrains/crack/BetterIntelliJ-1.16.jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -495,6 +542,8 @@
       <workItem from="1631797826800" duration="5341000" />
       <workItem from="1631884855893" duration="293000" />
       <workItem from="1631885166838" duration="10014000" />
+      <workItem from="1632018859149" duration="138000" />
+      <workItem from="1632019009354" duration="166000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1">
       <created>1631888195726</created>
@@ -517,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631970840149</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v0.0.1">
+      <created>1631976661050</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631976661050</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -595,7 +651,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

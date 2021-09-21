@@ -7,6 +7,7 @@ spring:
     url: jdbc:mysql://localhost:3306/manager?setUnicode=true&charsetEncoding=utf-8
     username: root
     password: root
+    type: com.alibaba.druid.pool.DruidDataSource
   thymeleaf:
     enabled: true
     cache: false

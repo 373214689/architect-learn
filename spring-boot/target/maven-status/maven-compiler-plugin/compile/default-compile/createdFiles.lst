@@ -1,6 +1,8 @@
 web\spring\boot\component\MapperUnit.class
 web\spring\boot\service\TestService.class
 web\spring\boot\controller\HomeController.class
+web\spring\boot\component\MybatisMapperFactory.class
 web\spring\boot\StartSpringBoot.class
 web\spring\boot\entity\User.class
+web\spring\boot\component\MybatisMapper.class
 web\spring\boot\mapper\UserMapper.class
