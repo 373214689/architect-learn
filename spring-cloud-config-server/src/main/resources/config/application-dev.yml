@@ -1,0 +1,65 @@
+server:
+  port: 8888
+
+spring:
+  application:  # 应用名字，config server 会根据它作为服务id
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///d:/home/liuyang/git/spring-cloud-config-repos
+          force-pull: true
+          default-label: master
+          basedir: git/config-repos
+          search-paths: '{application}'
+          refresh-rate: 0
+        #如下是本地文件配置
+        native:
+          search-locations: classpath:/git/config-repos #配置文件存放的目录
+    bus:
+      id: ${spring.application.name}:${server.port}
+      enabled: true
+      # destination: ${spring.application.name}-${server.port}-Exchange
+      content-type: application/json
+      trace:
+        enabled: true
+      refresh:
+        enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    dynamic: true
+    template:
+      exchange: ${spring.application.name}-${server.port}-Exchange
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+eureka:
+  instance:
+    appname: eureka-server
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    healthcheck: # 需要引入 amqp 并连接 rabbit mq，否则健康检测会不通过
+      enabled: true
+
+
+

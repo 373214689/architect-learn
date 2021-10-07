@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="v0.0.1 2021/09/21">
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/component/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-client/src/main/java/com/liuyang/spring/cloud/StartConfigClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-client/src/main/java/com/liuyang/spring/cloud/controller/ConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-client/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-client/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-client/src/main/resources/config/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/java/com/liuyang/spring/cloud/StartConfigServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-eureka-server/src/main/java/com/liuyang/spring/cloud/StartEurekaServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-eureka-server/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-eureka-server/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/UserContorller.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/JsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/config/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/config/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MapperUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MybatisMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MybatisMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -411,7 +411,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1631894977766" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-cloud-config-client/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -422,10 +422,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-cloud-config-client\src\main\resources" />
+      <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-cloud-config-server\src\main\resources" />
+      <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-cloud-eureka-server\src\main\resources\config" />
       <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-boot\src\main\resources\templates" />
       <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-boot\src\main\resources" />
-      <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\spring-boot\src\main\java\web\spring\boot" />
-      <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\life-restart\src\main\resources\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\home\liuyang\Workspace\source\web\architectlearn\life-restart\src\main\resources\templates" />
@@ -435,6 +436,7 @@
       <recent name="com.liuyang.liferestart" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liuyang.spring.cloud" />
       <recent name="web.spring.boot.mapper" />
     </key>
   </component>
@@ -445,14 +447,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestUserMapper.selectUser">
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Maven.spring-cloud-eureka-server [spring-boot:run]">
     <configuration name="TestUserMapper.selectUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="life-restart" />
       <extension name="coverage">
@@ -465,6 +460,17 @@
       <option name="MAIN_CLASS_NAME" value="com.liuyang.test.TestUserMapper" />
       <option name="METHOD_NAME" value="selectUser" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -494,9 +500,61 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="spring-cloud-eureka-server [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/spring-cloud-eureka-server" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="SpringBoot-LiftRestart" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="life-restart" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.liuyang.web.StartSpringBoot" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartConfigClient" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-config-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liuyang.spring.cloud.StartConfigClient" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liuyang.spring.cloud.StartConfigServer" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartEurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.liuyang.spring.cloud.StartEurekaServer" />
       <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
@@ -512,11 +570,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=utf-8" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TestUserMapper.selectUser" />
+      <item itemvalue="Maven.spring-cloud-eureka-server [spring-boot:run]" />
+      <item itemvalue="Spring Boot.SpringBoot-LiftRestart" />
+      <item itemvalue="Spring Boot.StartSpringBoot" />
+      <item itemvalue="Spring Boot.StartEurekaServer" />
+      <item itemvalue="Spring Boot.StartConfigServer" />
+      <item itemvalue="Spring Boot.StartConfigClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.spring-cloud-eureka-server [spring-boot:run]" />
         <item itemvalue="JUnit.TestUserMapper.selectUser" />
       </list>
     </recent_temporary>
@@ -537,6 +609,16 @@
       <workItem from="1631885166838" duration="10014000" />
       <workItem from="1632018859149" duration="138000" />
       <workItem from="1632019009354" duration="166000" />
+      <workItem from="1632486213971" duration="2029000" />
+      <workItem from="1632537924800" duration="13148000" />
+      <workItem from="1632659706334" duration="456000" />
+      <workItem from="1632660195567" duration="3087000" />
+      <workItem from="1632745104685" duration="3191000" />
+      <workItem from="1632921759531" duration="1399000" />
+      <workItem from="1633135103595" duration="558000" />
+      <workItem from="1633397946350" duration="8047000" />
+      <workItem from="1633493344152" duration="1318000" />
+      <workItem from="1633576091193" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1">
       <created>1631888195726</created>
@@ -594,7 +676,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632207936994</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="v0.0.1 2021/09/21">
+      <created>1632232588225</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632232588225</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">

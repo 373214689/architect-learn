@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-learn" />
         <module name="spark-learn" />
         <module name="spring-mvc" />
         <module name="flink-learn" />
-        <module name="hive-learn" />
+        <module name="spring-cloud-config-server" />
         <module name="kafka-learn" />
-        <module name="spring-boot" />
         <module name="hadoop-learn" />
         <module name="scala-learn" />
+        <module name="java-learn" />
+        <module name="spring-cloud-eureka-server" />
+        <module name="hive-learn" />
+        <module name="spring-boot" />
+        <module name="spring-cloud-config-client" />
         <module name="life-restart" />
       </profile>
     </annotationProcessing>

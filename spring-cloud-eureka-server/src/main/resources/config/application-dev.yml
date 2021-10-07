@@ -1,0 +1,28 @@
+server:
+  port: 8761
+
+spring:
+  application:  # 应用名字，eureka 会根据它作为服务id
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: localhost
+    #statusPageUrlPath: eureka/info
+    #healthCheckUrlPath: eureka/health
+    #homePageUrl: https://${eureka.instance.hostname}/
+    nonSecurePort: 80
+    prefer-ip-address: true
+  client:
+    service-url: #  eureka server 的地址， 咱们单实例模式就写自己好了
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+    register-with-eureka: false  # 不向eureka server 注册自己
+    fetch-registry: false  # 不向eureka server 获取服务列表
+    healthcheck:
+      enabled: true
+  # server:
+  #  enable-self-preservation: false
+  #  eviction-interval-timer-in-ms: 6000
+
+
+

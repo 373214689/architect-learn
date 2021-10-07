@@ -19,6 +19,9 @@
         <module>spring-mvc</module>
         <module>spring-boot</module>
         <module>life-restart</module>
+        <module>spring-cloud-eureka-server</module>
+        <module>spring-cloud-config-server</module>
+        <module>spring-cloud-config-client</module>
     </modules>
 
     <properties>

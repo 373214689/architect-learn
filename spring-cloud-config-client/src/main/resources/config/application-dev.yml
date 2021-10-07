@@ -1,0 +1,24 @@
+server:
+  port: 8889
+
+spring:
+  application:  # 应用名字，config server 会根据它作为服务id
+    name: config-client
+  config:
+    import: optional:configserver:http://localhost:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+
+
+
+
