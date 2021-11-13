@@ -7,13 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import web.spring.boot.component.MybatisMapper;
-import web.spring.boot.component.MybatisMapperFactory;
-import web.spring.boot.entity.Message;
+import web.spring.boot.entity.Message1;
 import web.spring.boot.entity.User;
 import web.spring.boot.mapper.UserMapper;
 import web.spring.boot.service.UserService;
 import web.spring.boot.util.JsonUtil;
-import web.spring.boot.util.RedisUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -46,11 +44,11 @@ public class HomeController {
             throws IOException
     {
 
-        Message<String> message = userService.verify(request, response);
+        Message1<String> message1 = userService.verify(request, response);
 
-        logger.info("/hello. {}", JsonUtil.writeValueAsString(message));
+        logger.info("/hello. {}", JsonUtil.writeValueAsString(message1));
 
-        if (message.getCode() >= 400) {
+        if (message1.getCode() >= 400) {
             response.sendRedirect("/v1/login");
         }
 

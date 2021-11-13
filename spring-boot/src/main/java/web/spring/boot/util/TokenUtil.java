@@ -2,16 +2,14 @@ package web.spring.boot.util;
 
 
 import com.auth0.jwt.JWT;
-import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.auth0.jwt.interfaces.DecodedJWT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import web.spring.boot.entity.Message;
+import web.spring.boot.entity.Message1;
 import web.spring.boot.entity.User;
 import web.spring.boot.mapper.UserMapper;
 
@@ -42,7 +40,7 @@ public class TokenUtil {
         return tokenUtil.createJWT(user, expired);
     }
 
-    public static Message<String> verify(String token) {
+    public static Message1<String> verify(String token) {
         return tokenUtil.verifyJWT(token);
     }
 
@@ -61,7 +59,7 @@ public class TokenUtil {
                 .sign(Algorithm.HMAC256(user.getPassword())); // 解密需要用到
     }
 
-    private Message<String> verifyJWT(String token) {
+    private Message1<String> verifyJWT(String token) {
         // 解析公共部分的 USERID
         int userId = -1;
         try {
@@ -69,13 +67,13 @@ public class TokenUtil {
             if (null != audience && audience.size()>0)
                 userId = Integer.parseInt(audience.get(0));
         } catch (JWTDecodeException j) {
-            return Message.create(Message.FORBIDDEN, "User status is forbidden");
+            return Message1.create(Message1.FORBIDDEN, "User status is forbidden");
         }
         // 从数据库查询 用户
         List<User> userList = userMapper.selectUserById(userId);
 
         if (null == userList || userList.size() == 0) {
-            return Message.create(Message.NOT_FOUND, "User has been not found");
+            return Message1.create(Message1.NOT_FOUND, "User has been not found");
         }
 
         User user = userList.get(0);
@@ -85,9 +83,9 @@ public class TokenUtil {
         try {
             verifier.verify(token);
         } catch (JWTVerificationException e) {
-            return Message.create(Message.UNAUTHORIZED, "User unauthorized");
+            return Message1.create(Message1.UNAUTHORIZED, "User unauthorized");
         }
 
-        return Message.create(Message.OK, "User verify success");
+        return Message1.create(Message1.OK, "User verify success");
     }
 }

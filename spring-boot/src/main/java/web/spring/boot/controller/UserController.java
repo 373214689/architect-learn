@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import web.spring.boot.entity.Message;
+import web.spring.boot.entity.Message1;
 import web.spring.boot.service.UserService;
 import web.spring.boot.util.JsonUtil;
 
@@ -38,12 +38,12 @@ public class UserController {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         //String reserved = request.getParameter("reserved");
-        Message<String> message = userService.login(request,
+        Message1<String> message1 = userService.login(request,
                 response,
                 username,
                 password);
-        logger.info("/v1/verify. {}", JsonUtil.writeValueAsString(message));
-        if (message.getCode() >= 400) {
+        logger.info("/v1/verify. {}", JsonUtil.writeValueAsString(message1));
+        if (message1.getCode() >= 400) {
             request.setAttribute("message", "用户登陆失败!");
             return "login";
         } else {

@@ -3,7 +3,7 @@ package web.spring.boot.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import web.spring.boot.entity.Message;
+import web.spring.boot.entity.Message1;
 import web.spring.boot.entity.User;
 import web.spring.boot.mapper.UserMapper;
 import web.spring.boot.util.RedisUtil;
@@ -13,7 +13,6 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
 @Service
@@ -81,48 +80,48 @@ public class UserService {
      * @param password 用户密码
      * @return 返回响应消息
      */
-    public Message<String> login(HttpServletRequest request,
-                                 HttpServletResponse response,
-                                 String username,
-                                 String password)
+    public Message1<String> login(HttpServletRequest request,
+                                  HttpServletResponse response,
+                                  String username,
+                                  String password)
     {
         List<User> userList = userMapper.selectUserByName(username);
         if (userList.size() == 0) {
-            return Message.create(Message.NOT_FOUND, "", "User not found");
+            return Message1.create(Message1.NOT_FOUND, "", "User not found");
         }
         if (!password.equals(userList.get(0).getPassword())) {
-            return Message.create(Message.BAD_REQUEST, "", "User longin fail");
+            return Message1.create(Message1.BAD_REQUEST, "", "User longin fail");
         }
         String token = TokenUtil.create(userList.get(0), 30 * 60);
 
         saveToken(request, response, token);
 
-        return Message.create(Message.OK, token, "User longin success");
+        return Message1.create(Message1.OK, token, "User longin success");
 
     }
 
 
-    public Message<String> verify(HttpServletRequest request,
-                                  HttpServletResponse response)
+    public Message1<String> verify(HttpServletRequest request,
+                                   HttpServletResponse response)
     {
         String token = getToken(request, response);
 
         if (null == token)
-            return Message.create(Message.NOT_FOUND, "", "User token not found");
+            return Message1.create(Message1.NOT_FOUND, "", "User token not found");
 
         if (!RedisUtil.hasKey("token=" + token))
-            return Message.create(Message.FORBIDDEN, "", "User token invalid");
+            return Message1.create(Message1.FORBIDDEN, "", "User token invalid");
 
         return TokenUtil.verify(token);
     }
 
-    public Message<String> logout(HttpServletRequest request,
-                                  HttpServletResponse response)
+    public Message1<String> logout(HttpServletRequest request,
+                                   HttpServletResponse response)
     {
         String token = getToken(request, response);
         if (null != token)
             removeToken(request, response, token);
-        return Message.create(Message.OK, "", "User logout success");
+        return Message1.create(Message1.OK, "", "User logout success");
 
     }
 

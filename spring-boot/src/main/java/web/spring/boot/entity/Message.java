@@ -1,11 +1,12 @@
 package web.spring.boot.entity;
 
 
-public class Message <T> {
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+public class Message <T> {
     /** 成功 */
     public static final int OK = 200;
-
     /** 宫户端错误请求 */
     public static final int BAD_REQUEST = 400;
     /** 客户端未检验身份 */
@@ -23,24 +24,27 @@ public class Message <T> {
 
     public static final int SERVER_ERROR = 500;
 
-    public static <T> Message<T> create(int code, String token, T message) {
-        return new Message<T> (code, token, message);
+    private static final ObjectMapper mapper = new ObjectMapper();
+
+    public static <T> Message<T> success(T data) {
+        return new Message<>(OK, data, null);
     }
 
-    public static <T> Message<T> create(int code, T message) {
-        return new Message<T> (code, null, message);
+    public static <T> Message<T> error(String message) {
+        return new Message<>(OK, null, message);
     }
 
+    public static <T> Message<T> create(int code, T data, String message) {
+        return new Message<>(OK, data, message);
+    }
 
     private int code;
+    private T data;
+    private String message;
 
-    private String token;
-
-    private T message;
-
-    public Message(int code, String token, T message) {
+    public Message(int code, T data, String message) {
         this.code = code;
-        this.token = token;
+        this.data = data;
         this.message = message;
     }
 
@@ -48,11 +52,11 @@ public class Message <T> {
         return code;
     }
 
-    public String getToken() {
-        return token;
+    public T getData() {
+        return data;
     }
 
-    public T getMessage() {
+    public String getMessage() {
         return message;
     }
 
@@ -60,11 +64,21 @@ public class Message <T> {
         this.code = code;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setData(T data) {
+        this.data = data;
     }
 
-    public void setMessage(T message) {
+    public void setMessage(String message) {
         this.message = message;
     }
+
+    @Override
+    public String toString() {
+        try {
+            return mapper.writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            return null;
+        }
+    }
+
 }

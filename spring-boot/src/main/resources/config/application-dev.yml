@@ -8,6 +8,13 @@ spring:
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    .
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
   thymeleaf:
     enabled: true
     cache: false
