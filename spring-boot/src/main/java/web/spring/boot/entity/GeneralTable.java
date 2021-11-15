@@ -6,14 +6,16 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity(name = "TABLES")
+@Entity(name = "T_DG_TABLES")
 @Data
 public class GeneralTable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "table_id", unique = true)
-    int tableId;
+    @Column(name = "table_id", nullable=false, unique = true)
+    String tableId;
+
+    @Column(name = "database_id", nullable=false)
+    String databaseId;
 
     @Column(name = "table_name", length=100, nullable = false)
     String tableName;

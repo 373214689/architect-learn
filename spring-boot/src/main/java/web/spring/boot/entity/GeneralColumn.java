@@ -5,13 +5,15 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity(name = "COLUMNS")
+@Entity(name = "T_DG_COLUMNS")
 @Data
 public class GeneralColumn {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "column_id", nullable = false)
-    int columnId;
+    String columnId;
+
+    @Column(name = "column_index", nullable = false)
+    int columnIndex;
 
     @Column(name = "column_name", length=100, nullable = false)
     String columnName;
@@ -30,6 +32,9 @@ public class GeneralColumn {
 
     @Column(name = "is_partition")
     boolean isPartition = false;
+
+    @Column(name = "is_primary")
+    boolean isPrimary = false;
 
     @Column(name = "update_time")
     LocalDateTime updateTime = LocalDateTime.now();

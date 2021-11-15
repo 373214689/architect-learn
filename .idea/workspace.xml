@@ -4,119 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="v0.0.1 2021/09/21">
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralColumnMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralTableMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/Message1.java" afterDir="false" />
+    <list default="true" id="3227c3d8-3e38-4a28-94b7-7e0707344bfd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/module/ColumnModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/module/TableMappingModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/module/TableModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learn/target/classes/flink/base/window/LearnTumblingWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learn/target/classes/flink/base/window/LearnTumblingWindow$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learn/target/classes/flink/base/window/LearnTumblingWindow$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learn/target/classes/flink/base/window/LearnTumblingWindow$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learn/target/classes/flink/base/window/LearnTumblingWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/META-INF/java-learn.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/datastruct/LeanMultiWayTree$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/datastruct/LeanMultiWayTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/datastruct/LearnBTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/datastruct/LearnBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/datastruct/LearnRedBlackTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/search/LearnBinarySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/search/LearnSequentialSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/sort/LeanBubbleSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/sort/LearnHeapSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/sort/LearnInsertionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/sort/LearnQuickSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/sort/LearnSelectionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/sort/LearnShellSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/algorithm/base/sort/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/db/middlewave/mybatis/LearnMybatis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/db/middlewave/mybatis/example/Blog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/webapp/123.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/classes/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/123.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/algorithm/base/search/LearnBinarySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/algorithm/base/sort/LeanBubbleSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/algorithm/base/sort/LearnHeapSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/algorithm/base/sort/LearnInsertionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/algorithm/base/sort/LearnQuickSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/algorithm/base/sort/LearnSelectionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/algorithm/base/sort/LearnShellSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/db/middlewave/mybatis/LearnMybatis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/db/middlewave/mybatis/example/Blog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mybatis-block-mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/web/spring/mvc/controller/DemoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/webapp/123.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/classes/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/jsp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/java-learn-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/tomcat/logs/access_log.2021-08-10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/tomcat/logs/access_log.2021-08-13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/success_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learn/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/success_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/util/TokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/config/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/config/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/config/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/datasource.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/StartSpringBoot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MybatisMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/component/MybatisMapperFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/web/spring/boot/service/TestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/classes/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/classes/mybatis/mybatis-block-mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/classes/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/classes/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/classes/spring/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/classes/web/spring/mvc/controller/DemoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/tomcat/logs/access_log.2021-08-13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/tomcat/logs/access_log.2021-08-25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/success_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/success_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralColumnMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralColumnMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralTableMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/web/spring/boot/entity/GeneralTableMapping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -745,7 +643,7 @@
       <workItem from="1633493344152" duration="1318000" />
       <workItem from="1633576091193" duration="605000" />
       <workItem from="1635602984507" duration="13931000" />
-      <workItem from="1635773507489" duration="1722000" />
+      <workItem from="1635773507489" duration="4756000" />
     </task>
     <task id="LOCAL-00001" summary="v0.0.1">
       <created>1631888195726</created>
@@ -817,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635609618067</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v0.0.1 2021/09/21">
+      <created>1636786856514</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1636786856514</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -911,9 +816,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v0.0.1" />
-    <MESSAGE value="v0.0.1 2021/09/21" />
     <MESSAGE value="v0.0.2 2021/10/31" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.0.2 2021/10/31" />
+    <MESSAGE value="v0.0.1 2021/09/21" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.0.1 2021/09/21" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
