@@ -13,6 +13,7 @@
         <module name="kafka-learn" />
         <module name="hadoop-learn" />
         <module name="scala-learn" />
+        <module name="web-ide" />
         <module name="java-learn" />
         <module name="spring-cloud-eureka-server" />
         <module name="hive-learn" />

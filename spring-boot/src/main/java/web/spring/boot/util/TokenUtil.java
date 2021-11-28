@@ -9,8 +9,8 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import web.spring.boot.entity.Message1;
-import web.spring.boot.entity.User;
+import web.spring.boot.entity.GeneralUser;
+import web.spring.boot.entity.Message;
 import web.spring.boot.mapper.UserMapper;
 
 import javax.annotation.PostConstruct;
@@ -36,15 +36,15 @@ public class TokenUtil {
         tokenUtil = this;
     }
 
-    public static String create(User user, long expired) {
+    public static String create(GeneralUser user, long expired) {
         return tokenUtil.createJWT(user, expired);
     }
 
-    public static Message1<String> verify(String token) {
+    public static Message<String> verify(String token) {
         return tokenUtil.verifyJWT(token);
     }
 
-    private String createJWT(User user, long expired) {
+    private String createJWT(GeneralUser user, long expired) {
         // 加密方式有两种，一种是利用公共密钥加密，一种是利用用户密码加密
         // 用途各有不同，从安全性方向考虑，公共密钥比用户密码加密更不容易暴露，缺点是要需要频繁查询数据库
         // 使用公共密钥的好处是不需要频繁查询数据库，但公共刻密钥暴露后危害较大
@@ -59,7 +59,7 @@ public class TokenUtil {
                 .sign(Algorithm.HMAC256(user.getPassword())); // 解密需要用到
     }
 
-    private Message1<String> verifyJWT(String token) {
+    private Message<String> verifyJWT(String token) {
         // 解析公共部分的 USERID
         int userId = -1;
         try {
@@ -67,25 +67,25 @@ public class TokenUtil {
             if (null != audience && audience.size()>0)
                 userId = Integer.parseInt(audience.get(0));
         } catch (JWTDecodeException j) {
-            return Message1.create(Message1.FORBIDDEN, "User status is forbidden");
+            return Message.create(Message.FORBIDDEN, null, "User status is forbidden");
         }
         // 从数据库查询 用户
-        List<User> userList = userMapper.selectUserById(userId);
+        List<GeneralUser> userList = userMapper.selectUserById(userId);
 
         if (null == userList || userList.size() == 0) {
-            return Message1.create(Message1.NOT_FOUND, "User has been not found");
+            return Message.create(Message.NOT_FOUND, null,"User has been not found");
         }
 
-        User user = userList.get(0);
+        GeneralUser user = userList.get(0);
 
         // 使用用户密码验证 token
         JWTVerifier verifier = JWT.require(Algorithm.HMAC256(user.getPassword())).build();
         try {
             verifier.verify(token);
         } catch (JWTVerificationException e) {
-            return Message1.create(Message1.UNAUTHORIZED, "User unauthorized");
+            return Message.create(Message.UNAUTHORIZED, null, "User unauthorized");
         }
 
-        return Message1.create(Message1.OK, "User verify success");
+        return Message.create(Message.OK, null,"User verify success");
     }
 }

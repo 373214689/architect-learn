@@ -9,7 +9,6 @@ spring:
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
   jpa:
-    .
     generate-ddl: true
     show-sql: true
     hibernate:

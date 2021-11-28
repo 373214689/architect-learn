@@ -6,8 +6,9 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity(name = "T_DG_TABLES")
 @Data
+@Entity
+@Table(name = "T_DG_TABLES")
 public class GeneralTable {
 
     @Id

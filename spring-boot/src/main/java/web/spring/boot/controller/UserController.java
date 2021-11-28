@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import web.spring.boot.entity.Message1;
+import web.spring.boot.entity.Message;
 import web.spring.boot.service.UserService;
 import web.spring.boot.util.JsonUtil;
 
@@ -38,7 +38,7 @@ public class UserController {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         //String reserved = request.getParameter("reserved");
-        Message1<String> message1 = userService.login(request,
+        Message<String> message1 = userService.login(request,
                 response,
                 username,
                 password);

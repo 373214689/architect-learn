@@ -31,11 +31,11 @@ public class Message <T> {
     }
 
     public static <T> Message<T> error(String message) {
-        return new Message<>(OK, null, message);
+        return new Message<>(BAD_REQUEST, null, message);
     }
 
     public static <T> Message<T> create(int code, T data, String message) {
-        return new Message<>(OK, data, message);
+        return new Message<>(code, data, message);
     }
 
     private int code;

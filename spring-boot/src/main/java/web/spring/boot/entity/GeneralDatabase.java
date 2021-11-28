@@ -5,10 +5,12 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDateTime;
 
 @Data
-@Entity(name = "T_DG_DATABASES")
+@Entity
+@Table(name = "T_DG_DATABASES")
 public class GeneralDatabase {
     @Id
     @Column(name = "database_id", nullable=false, unique = true)

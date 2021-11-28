@@ -6,7 +6,7 @@
     <!-- https://mybatis.org/mybatis-3/zh/sqlmap-xml.html -->
 
     <!-- https://mybatis.org/mybatis-3/zh/sqlmap-xml.html#Result_Maps -->
-    <resultMap id="user" type="web.spring.boot.entity.User">
+    <resultMap id="user" type="web.spring.boot.entity.GeneralUser">
         <id column="user_id" property="userId"/>
         <result column="username" property="username"/>
         <result column="password" property="password"/>
@@ -27,7 +27,7 @@
         select * from dim_cfg_users t
     </select>
 
-    <insert id="insertUser" parameterType="web.spring.boot.entity.User">
+    <insert id="insertUser" parameterType="web.spring.boot.entity.GeneralUser">
         insert into dim_cfg_users (
             user_id,
             username,

@@ -5,8 +5,9 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity(name = "T_DG_COLUMNS")
 @Data
+@Entity
+@Table(name = "T_DG_COLUMNS")
 public class GeneralColumn {
     @Id
     @Column(name = "column_id", nullable = false)
@@ -23,12 +24,6 @@ public class GeneralColumn {
 
     @Column(name = "column_type", length=100, nullable = false)
     String columnType;
-
-    @Column(name = "precision")
-    int precision;
-
-    @Column(name = "scale")
-    int scale;
 
     @Column(name = "is_partition")
     boolean isPartition = false;

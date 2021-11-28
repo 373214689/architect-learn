@@ -22,6 +22,7 @@
         <module>spring-cloud-eureka-server</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-config-client</module>
+        <module>web-ide</module>
     </modules>
 
     <properties>

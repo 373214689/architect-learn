@@ -7,12 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
-import web.spring.boot.entity.User;
+import web.spring.boot.entity.GeneralUser;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Mybatis Mapper 动态生成和调度
@@ -43,19 +40,19 @@ public class MybatisMapperFactory {
                 "select * from dim_cfg_users where user_id = #{userId}",
                 SqlCommandType.SELECT,
                 Integer.class,
-                User.class);
+                GeneralUser.class);
 
         mapper.addSqlStatement("selectUserByName",
                 "select * from dim_cfg_users where username = #{username}",
                 SqlCommandType.SELECT,
                 String.class,
-                User.class);
+                GeneralUser.class);
 
         mapper.addSqlStatement("insertUser",
                 "INSERT into dim_cfg_users (" +
                         ")",
                 SqlCommandType.INSERT,
-                User.class,
+                GeneralUser.class,
                 Integer.class);
 
         logger.info("Init bean userMapper2. id: selectUserById");

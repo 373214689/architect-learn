@@ -2,7 +2,6 @@ package web.spring.boot;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
@@ -13,7 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("web.spring.boot.mapper")
-@EnableAutoConfiguration
 public class StartSpringBoot {
     public static void main(String[] args) {
         SpringApplication.run(StartSpringBoot.class, args);

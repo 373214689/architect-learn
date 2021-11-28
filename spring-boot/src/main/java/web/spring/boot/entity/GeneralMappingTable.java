@@ -5,14 +5,20 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDateTime;
 
 @Data
-@Entity(name = "T_DG_TABLE_MAPPINGS")
-public class GeneralTableMapping {
+@Entity
+@Table(name = "T_DG_TABLE_MAPPINGS")
+public class GeneralMappingTable {
     @Id
     @Column(name = "mapping_id", nullable=false, unique = true)
     String mappingId;
+
+    String mappingName;
+
+    String mappingAlias;
 
     @Column(name = "mapping_type", nullable=false)
     int mappingType; // 映射类型。from, join,
