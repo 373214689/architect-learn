@@ -9,7 +9,7 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import web.spring.boot.entity.GeneralUser;
+import web.spring.boot.entity.GenericUser;
 import web.spring.boot.entity.Message;
 import web.spring.boot.mapper.UserMapper;
 
@@ -36,7 +36,7 @@ public class TokenUtil {
         tokenUtil = this;
     }
 
-    public static String create(GeneralUser user, long expired) {
+    public static String create(GenericUser user, long expired) {
         return tokenUtil.createJWT(user, expired);
     }
 
@@ -44,7 +44,7 @@ public class TokenUtil {
         return tokenUtil.verifyJWT(token);
     }
 
-    private String createJWT(GeneralUser user, long expired) {
+    private String createJWT(GenericUser user, long expired) {
         // 加密方式有两种，一种是利用公共密钥加密，一种是利用用户密码加密
         // 用途各有不同，从安全性方向考虑，公共密钥比用户密码加密更不容易暴露，缺点是要需要频繁查询数据库
         // 使用公共密钥的好处是不需要频繁查询数据库，但公共刻密钥暴露后危害较大
@@ -70,13 +70,13 @@ public class TokenUtil {
             return Message.create(Message.FORBIDDEN, null, "User status is forbidden");
         }
         // 从数据库查询 用户
-        List<GeneralUser> userList = userMapper.selectUserById(userId);
+        List<GenericUser> userList = userMapper.selectUserById(userId);
 
         if (null == userList || userList.size() == 0) {
             return Message.create(Message.NOT_FOUND, null,"User has been not found");
         }
 
-        GeneralUser user = userList.get(0);
+        GenericUser user = userList.get(0);
 
         // 使用用户密码验证 token
         JWTVerifier verifier = JWT.require(Algorithm.HMAC256(user.getPassword())).build();

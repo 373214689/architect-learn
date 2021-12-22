@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import web.spring.boot.entity.GeneralUser;
+import web.spring.boot.entity.GenericUser;
 
 import javax.annotation.PostConstruct;
 
@@ -40,19 +40,19 @@ public class MybatisMapperFactory {
                 "select * from dim_cfg_users where user_id = #{userId}",
                 SqlCommandType.SELECT,
                 Integer.class,
-                GeneralUser.class);
+                GenericUser.class);
 
         mapper.addSqlStatement("selectUserByName",
                 "select * from dim_cfg_users where username = #{username}",
                 SqlCommandType.SELECT,
                 String.class,
-                GeneralUser.class);
+                GenericUser.class);
 
         mapper.addSqlStatement("insertUser",
                 "INSERT into dim_cfg_users (" +
                         ")",
                 SqlCommandType.INSERT,
-                GeneralUser.class,
+                GenericUser.class,
                 Integer.class);
 
         logger.info("Init bean userMapper2. id: selectUserById");

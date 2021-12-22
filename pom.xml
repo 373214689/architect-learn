@@ -15,7 +15,6 @@
         <module>flink-learn</module>
         <module>hive-learn</module>
         <module>kafka-learn</module>
-        <module>scala-learn</module>
         <module>spring-mvc</module>
         <module>spring-boot</module>
         <module>life-restart</module>
@@ -23,6 +22,7 @@
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-config-client</module>
         <module>web-ide</module>
+        <module>scala-spark-structstreaming</module>
     </modules>
 
     <properties>

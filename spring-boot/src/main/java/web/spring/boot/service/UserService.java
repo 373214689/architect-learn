@@ -3,7 +3,7 @@ package web.spring.boot.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import web.spring.boot.entity.GeneralUser;
+import web.spring.boot.entity.GenericUser;
 import web.spring.boot.entity.Message;
 import web.spring.boot.mapper.UserMapper;
 import web.spring.boot.util.RedisUtil;
@@ -85,7 +85,7 @@ public class UserService {
                                  String username,
                                  String password)
     {
-        List<GeneralUser> userList = userMapper.selectUserByName(username);
+        List<GenericUser> userList = userMapper.selectUserByName(username);
         if (userList.size() == 0) {
             return Message.create(Message.NOT_FOUND, null, "User not found");
         }

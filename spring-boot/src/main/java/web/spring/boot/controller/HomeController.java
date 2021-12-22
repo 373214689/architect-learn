@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import web.spring.boot.component.MybatisMapper;
-import web.spring.boot.entity.GeneralUser;
+import web.spring.boot.entity.GenericUser;
 import web.spring.boot.entity.Message;
 import web.spring.boot.mapper.UserMapper;
 import web.spring.boot.service.UserService;
@@ -28,7 +28,6 @@ public class HomeController {
     public String SpringBoot() {
         return "Hello World! This is my SpringBoot";
     }
-
 
     @Autowired
     UserMapper userMapper;
@@ -52,8 +51,6 @@ public class HomeController {
             response.sendRedirect("/v1/login");
         }
 
-        int i = 1/0;
-
         request.setAttribute("name", "life restart");
         return "index";
     }
@@ -66,7 +63,7 @@ public class HomeController {
 
     @ResponseBody
     @RequestMapping("test")
-    public List<GeneralUser> test(HttpServletRequest request, HttpServletResponse response) {
+    public List<GenericUser> test(HttpServletRequest request, HttpServletResponse response) {
         return userMapper2.selectList("selectUserById", 1);
         //return userMapper.selectUserById(1);
     }

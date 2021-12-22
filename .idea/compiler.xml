@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -12,9 +13,9 @@
         <module name="spring-cloud-config-server" />
         <module name="kafka-learn" />
         <module name="hadoop-learn" />
-        <module name="scala-learn" />
         <module name="web-ide" />
         <module name="java-learn" />
+        <module name="scala-spark-structstreaming" />
         <module name="spring-cloud-eureka-server" />
         <module name="hive-learn" />
         <module name="spring-boot" />
@@ -22,6 +23,8 @@
         <module name="life-restart" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="scala-learn" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,6 +1,6 @@
 package web.spring.boot.mapper;
 
-import web.spring.boot.entity.GeneralUser;
+import web.spring.boot.entity.GenericUser;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -8,10 +8,10 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-    public List<GeneralUser> selectUserById(int userId);
+    public List<GenericUser> selectUserById(int userId);
 
-    public List<GeneralUser> selectUserByName(String name);
+    public List<GenericUser> selectUserByName(String name);
 
-    public int insertUser(GeneralUser users);
+    public int insertUser(GenericUser users);
 
 }

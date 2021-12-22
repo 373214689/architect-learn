@@ -3,7 +3,9 @@ package web.spring.boot.entity;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
 
+@Data
 public class Message <T> {
     /** 成功 */
     public static final int OK = 200;
@@ -34,6 +36,10 @@ public class Message <T> {
         return new Message<>(BAD_REQUEST, null, message);
     }
 
+    public static <T> Message<T> forbidden(String message) {
+        return new Message<>(FORBIDDEN, null, message);
+    }
+
     public static <T> Message<T> create(int code, T data, String message) {
         return new Message<>(code, data, message);
     }
@@ -45,30 +51,6 @@ public class Message <T> {
     public Message(int code, T data, String message) {
         this.code = code;
         this.data = data;
-        this.message = message;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public void setMessage(String message) {
         this.message = message;
     }
 
