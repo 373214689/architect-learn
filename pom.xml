@@ -23,6 +23,7 @@
         <module>spring-cloud-config-client</module>
         <module>web-ide</module>
         <module>scala-spark-structstreaming</module>
+        <module>scala-flink</module>
     </modules>
 
     <properties>

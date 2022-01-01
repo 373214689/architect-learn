@@ -14,7 +14,7 @@ import scala.collection.mutable.ArrayBuffer
  * Hello world!
  *
  */
-object App {
+object StructedStreamingApp {
   val log = LoggerFactory.getLogger(this.getClass)
   def main(args:Array[String]) ={
     println( "Hello World!" )

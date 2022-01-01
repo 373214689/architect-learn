@@ -2,3 +2,5 @@
 target
 lib
 */*.iml
+src/main/resources/static
+test/main/resources/static
